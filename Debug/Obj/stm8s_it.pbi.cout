@@ -1,4 +1,4 @@
-"C:\ddd\bipper\main.cpp"
+"C:\ddd\bipper\stm8s_it.c"
 -std=c99
 -ferror-limit=100
 -I
