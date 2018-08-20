@@ -489,6 +489,13 @@ INTERRUPT_HANDLER(TIM6_UPD_OVF_TRG_IRQHandler, 23)
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
+   extern uint16_t msVar;
+   
+   TIM4_ClearITPendingBit(TIM4_IT_UPDATE);
+   
+   if(msVar) {
+     msVar--;
+   }
  }
 #endif /* (STM8S903) || (STM8AF622x)*/
 
