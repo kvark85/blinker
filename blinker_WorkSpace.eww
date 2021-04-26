@@ -2,7 +2,7 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\bipper.ewp</path>
+    <path>$WS_DIR$\blinker.ewp</path>
   </project>
   <batchBuild/>
 </workspace>

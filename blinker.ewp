@@ -482,7 +482,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>bipper.srec</state>
+          <state>blinker.srec</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
