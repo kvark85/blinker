@@ -10,8 +10,10 @@ int main()
   TIM4_Config();
 
   while(1){
-    INVERT_LED();
-    waitMs(2000);
+    GPIO_WriteLow(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_POSITIVE_GPIO_PINS);
+    waitMs(BLINK_TIME);
+    GPIO_WriteHigh(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_POSITIVE_GPIO_PINS);
+    waitMs(PERIOD - BLINK_TIME);
   }
 }
 
